@@ -79,4 +79,4 @@ selected_radius = sunspot_data["radius"][selected_index] + 20
 zoomed_image = sun_cropped[max(0, selected_y - selected_radius):min(sun_cropped.shape[0], selected_y + selected_radius),
                            max(0, selected_x - selected_radius):min(sun_cropped.shape[1], selected_x + selected_radius)]
 
-st.image(zoomed_image, caption=f"Zoomed View of Sunspot #{selected_sunspot}", use_column_width=True)
+st.image(zoomed_image, caption=f"Zoomed View of Sunspot #{selected_sunspot}", use_container_width=True)
